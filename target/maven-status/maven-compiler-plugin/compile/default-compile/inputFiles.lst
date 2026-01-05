@@ -1,0 +1,7 @@
+/home/runner/work/spring-petclinic-microservices-vet-service/spring-petclinic-microservices-vet-service/src/main/java/org/springframework/samples/petclinic/vets/VetsServiceApplication.java
+/home/runner/work/spring-petclinic-microservices-vet-service/spring-petclinic-microservices-vet-service/src/main/java/org/springframework/samples/petclinic/vets/model/Specialty.java
+/home/runner/work/spring-petclinic-microservices-vet-service/spring-petclinic-microservices-vet-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java
+/home/runner/work/spring-petclinic-microservices-vet-service/spring-petclinic-microservices-vet-service/src/main/java/org/springframework/samples/petclinic/vets/model/VetRepository.java
+/home/runner/work/spring-petclinic-microservices-vet-service/spring-petclinic-microservices-vet-service/src/main/java/org/springframework/samples/petclinic/vets/system/CacheConfig.java
+/home/runner/work/spring-petclinic-microservices-vet-service/spring-petclinic-microservices-vet-service/src/main/java/org/springframework/samples/petclinic/vets/system/VetsProperties.java
+/home/runner/work/spring-petclinic-microservices-vet-service/spring-petclinic-microservices-vet-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java
