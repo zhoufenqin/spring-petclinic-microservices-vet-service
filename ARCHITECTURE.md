@@ -38,7 +38,7 @@ This is the Vets Service microservice from the Spring PetClinic application. It 
 │ - REST API   │          │ VetsProperties   │       │ Specialty       │
 │ - @GetMapping│          │                  │       │ VetRepository   │
 │   /vets      │          │                  │       │                 │
-│ - Cacheable  │          │                  │       │                 │
+│ - @Cacheable │          │                  │       │                 │
 └──────────────┘          └──────────────────┘       └─────────────────┘
         │                                                      │
         └──────────────────────┬───────────────────────────────┘
