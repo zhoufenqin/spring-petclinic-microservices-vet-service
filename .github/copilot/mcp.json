@@ -1,8 +1,53 @@
 {
   "mcpServers": {
-    "my-custom-test-mcp": {
-      "command": "echo",
-      "args": ["test"]
+    "AppModJavaUpgrade": {
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "-y",
+        "-p",
+        "@microsoft/github-copilot-app-modernization-mcp-server",
+        "github-copilot-app-modernization-mcp-server",
+        "--loglevel",
+        "verbose",
+        "--callerType",
+        "copilot-cli",
+        "--serverType",
+        "javaUpgrade"
+      ],
+      "tools": ["*"]
+    },
+    "AppModDeploy": {
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "-y",
+        "-p",
+        "@microsoft/github-copilot-app-modernization-mcp-server",
+        "github-copilot-app-modernization-mcp-server",
+        "--loglevel",
+        "verbose",
+        "--callerType",
+        "copilot-cli",
+        "--serverType",
+        "codetocloud"
+      ],
+      "tools": ["*"]
+    },
+    "Assessment": {
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "-y",
+        "-p",
+        "@microsoft/github-copilot-app-modernization-mcp-server",
+        "github-copilot-app-modernization-mcp-server",
+        "--loglevel",
+        "verbose",
+        "--callerType",
+        "copilot-cli"
+      ],
+      "tools": ["*"]
     }
   }
 }
