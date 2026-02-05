@@ -6,8 +6,6 @@ on:
 env:
   SUMMARY_PATH: ".github/appmod/appcat/result/summary.md"
   ISSUE_NUMBER: "18"
-  REPO_OWNER: "zhoufenqin"
-  REPO_NAME: "spring-petclinic-microservices-vet-service"
 
 jobs:
   post-to-issue:

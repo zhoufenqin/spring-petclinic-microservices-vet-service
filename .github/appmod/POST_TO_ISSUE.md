@@ -22,9 +22,8 @@ gh issue comment 18 --body-file .github/appmod/appcat/result/summary.md --repo z
 Trigger the existing workflow manually:
 
 1. Go to the repository's Actions tab
-2. Select "Application Assessment" workflow
+2. Select "Post AppCAT Assessment to Issue" workflow
 3. Click "Run workflow"
-4. Provide the issue URL: `https://github.com/zhoufenqin/spring-petclinic-microservices-vet-service/issues/18`
 
 ### Option 3: Manual Post
 
