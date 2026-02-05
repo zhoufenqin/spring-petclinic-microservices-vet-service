@@ -26,9 +26,9 @@
 
 **Key Findings**:
 - **Mandatory Issues (6 locations)**:
-  - <!--ruleid=unsecure-network-protocol-00000-->Use of unsecured network protocols or URI libraries (2 locations found)
   - <!--ruleid=dockerfile-00000-->No Dockerfile found (1 location found)
   - <!--ruleid=embedded-cache-15000-->Caching - Spring Boot Cache library (3 locations found)
+  - <!--ruleid=unsecure-network-protocol-00000-->Use of unsecured network protocols or URI libraries (2 locations found)
 - **Potential Issues (1 locations)**:
   - <!--ruleid=spring-boot-to-azure-eureka-02000-->Embedded framework - Eureka Client (1 location found)
 - **Optional Issues (4 locations)**:

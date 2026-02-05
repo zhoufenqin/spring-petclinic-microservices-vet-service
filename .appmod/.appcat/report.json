@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "producer": "Java AppCAT CLI",
   "metadata": {
-    "analysisStartTime": "2026-02-03T05:22:43.4793894Z",
-    "analysisEndTime": "2026-02-03T05:23:14.9731014Z",
+    "analysisStartTime": "2026-02-04T05:12:34.7412675Z",
+    "analysisEndTime": "2026-02-04T05:13:46.6325573Z",
     "status": "Complete",
     "privacyMode": "Protected",
     "privacyModeHelpUrl": "https://aka.ms/appcat-privacy-mode",
@@ -64,7 +64,7 @@
       "incidents": [
         {
           "ruleId": "spring-boot-to-azure-config-server-01000",
-          "incidentId": "1e12cfb3-fd11-4d59-be41-7e5c8dc51196",
+          "incidentId": "52604c76-5551-4a49-85f3-83a4010ff327",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 91,
@@ -90,7 +90,7 @@
         },
         {
           "ruleId": "spring-boot-to-azure-eureka-02000",
-          "incidentId": "60009934-95f0-4115-8f09-7e436bd9cec5",
+          "incidentId": "621eabee-edf6-4d7d-8a6e-7fa73abdf033",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 95,
@@ -116,7 +116,7 @@
         },
         {
           "ruleId": "jakarta-ee-version-01000",
-          "incidentId": "f64a5ce6-80e5-4a6c-b525-206885f5fbfc",
+          "incidentId": "bd3df41b-43fd-4663-971d-a8dd995a905b",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 118,
@@ -141,60 +141,8 @@
           ]
         },
         {
-          "ruleId": "unsecure-network-protocol-00000",
-          "incidentId": "50ed2d01-4e06-4ef7-b97f-4abe7f210c12",
-          "location": "src/main/resources/application.yml",
-          "locationKind": "File",
-          "line": 5,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 3,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=cloud-readiness"
-          ]
-        },
-        {
-          "ruleId": "unsecure-network-protocol-00000",
-          "incidentId": "d937aa03-5c02-4e51-aebd-72ad4948eec9",
-          "location": "src/main/resources/application.yml",
-          "locationKind": "File",
-          "line": 16,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 3,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=cloud-readiness"
-          ]
-        },
-        {
           "ruleId": "hardcoded-urls-00001",
-          "incidentId": "a7b45450-6b5c-4df5-8796-e6c0cc5e5bdb",
+          "incidentId": "4a0462c2-8140-40c1-9a90-63cf41469004",
           "location": "src/main/resources/application.yml",
           "locationKind": "File",
           "line": 5,
@@ -220,7 +168,7 @@
         },
         {
           "ruleId": "hardcoded-urls-00001",
-          "incidentId": "88f01f54-d46c-4f55-8731-8396ac2600fb",
+          "incidentId": "bdcc0cf1-2753-481f-a110-54326d7a223c",
           "location": "src/main/resources/application.yml",
           "locationKind": "File",
           "line": 16,
@@ -246,7 +194,7 @@
         },
         {
           "ruleId": "dockerfile-00000",
-          "incidentId": "48126c7d-173c-483b-8fc0-eb0aa00eb370",
+          "incidentId": "de41cd2e-07b0-4c08-ab12-858489849d54",
           "location": "",
           "locationKind": "",
           "targets": {
@@ -266,7 +214,7 @@
         },
         {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "eb9703bb-e371-4884-a784-5f22f617bef6",
+          "incidentId": "592301dc-f3a2-4276-be3e-1d5742386bc1",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 76,
@@ -292,7 +240,7 @@
         },
         {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "b5b1d121-c593-4763-9dd0-a498aa20b211",
+          "incidentId": "a00c4f16-dd48-4754-b13c-f7dda97c3ef2",
           "location": "src/main/java/org/springframework/samples/petclinic/vets/system/CacheConfig.java",
           "locationKind": "File",
           "line": 18,
@@ -318,7 +266,7 @@
         },
         {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "ad481bd3-30ca-4700-9177-6aa7c6b20adc",
+          "incidentId": "8ea15df5-3386-4726-8b04-42255109610f",
           "location": "src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java",
           "locationKind": "File",
           "line": 22,
@@ -334,6 +282,58 @@
             },
             "azure-container-apps": {
               "effort": 5,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "unsecure-network-protocol-00000",
+          "incidentId": "9fde7992-0b16-42bf-afc1-ec2e0fa9ca45",
+          "location": "src/main/resources/application.yml",
+          "locationKind": "File",
+          "line": 5,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "unsecure-network-protocol-00000",
+          "incidentId": "be30787a-3cf8-405e-8cab-96223a0c09f7",
+          "location": "src/main/resources/application.yml",
+          "locationKind": "File",
+          "line": 16,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 3,
               "severity": "mandatory"
             }
           },
