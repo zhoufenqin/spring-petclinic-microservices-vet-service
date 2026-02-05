@@ -1,0 +1,83 @@
+name: Post AppCAT Assessment to Issue
+
+on:
+  workflow_dispatch:
+
+env:
+  SUMMARY_PATH: ".github/appmod/appcat/result/summary.md"
+  ISSUE_NUMBER: "18"
+  REPO_OWNER: "zhoufenqin"
+  REPO_NAME: "spring-petclinic-microservices-vet-service"
+
+jobs:
+  post-to-issue:
+    name: Post Assessment Summary to Issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify Summary File
+        run: |
+          SUMMARY_PATH="${{ env.SUMMARY_PATH }}"
+          echo "============== Verifying Summary File =============="
+          echo "> Summary path: $SUMMARY_PATH"
+          
+          if [ ! -f "$SUMMARY_PATH" ]; then
+            echo "❌ Summary file not found at: $SUMMARY_PATH"
+            exit 1
+          fi
+          
+          echo "✅ Summary file found!"
+          echo ""
+          echo "Preview of summary:"
+          head -n 20 "$SUMMARY_PATH"
+
+      - name: Post Summary to Issue
+        uses: actions/github-script@v7
+        env:
+          SUMMARY_PATH: ${{ env.SUMMARY_PATH }}
+          ISSUE_NUMBER: ${{ env.ISSUE_NUMBER }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            
+            const summaryPath = process.env.SUMMARY_PATH;
+            const issueNumber = parseInt(process.env.ISSUE_NUMBER);
+            
+            console.log(`📝 Reading summary from: ${summaryPath}`);
+            
+            // Read the summary content
+            let summaryContent;
+            try {
+              if (fs.existsSync(summaryPath)) {
+                summaryContent = fs.readFileSync(summaryPath, 'utf8');
+                console.log(`✅ Successfully read summary (${summaryContent.length} characters)`);
+              } else {
+                console.log(`❌ Summary file not found at ${summaryPath}`);
+                return;
+              }
+            } catch (error) {
+              console.log(`❌ Failed to read summary: ${error.message}`);
+              return;
+            }
+            
+            // Post to GitHub issue
+            console.log(`📝 Posting to issue #${issueNumber}`);
+            
+            const marker = '<!--appcat-assessment-summary-->';
+            const body = `${marker}\n\n${summaryContent}`;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: body
+            });
+            
+            console.log(`✅ Successfully posted assessment summary to issue #${issueNumber}`);
