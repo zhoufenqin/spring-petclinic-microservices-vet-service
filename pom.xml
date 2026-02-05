@@ -21,7 +21,7 @@
     <scm>
         <url>https://github.com/zhoufenqin/spring-petclinic-microservices-vet-service</url>
         <connection>scm:git:git://github.com/zhoufenqin/spring-petclinic-microservices-vet-service.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:zhoufenqin/spring-petclinic-microservices-vet-service.git</developerConnection>
+        <developerConnection>scm:git:ssh://git@github.com/zhoufenqin/spring-petclinic-microservices-vet-service.git</developerConnection>
     </scm>
 
     <properties>
