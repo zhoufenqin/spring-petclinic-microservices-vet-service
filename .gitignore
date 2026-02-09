@@ -1,1 +1,7 @@
 /.apt_generated/
+/target/
+*.class
+*.jar
+*.war
+*.ear
+.DS_Store

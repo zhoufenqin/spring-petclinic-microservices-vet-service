@@ -16,6 +16,14 @@
 	<name>Spring PetClinic Vets Service</name>
     <description>Spring PetClinic Vets Service</description>
 
+    <url>https://github.com/zhoufenqin/spring-petclinic-microservices-vet-service</url>
+
+    <scm>
+        <url>https://github.com/zhoufenqin/spring-petclinic-microservices-vet-service</url>
+        <connection>scm:git:git://github.com/zhoufenqin/spring-petclinic-microservices-vet-service.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/zhoufenqin/spring-petclinic-microservices-vet-service.git</developerConnection>
+    </scm>
+
     <properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2024.0.0</spring-cloud.version>
