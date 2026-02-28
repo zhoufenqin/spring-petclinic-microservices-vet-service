@@ -1,6 +1,6 @@
 # Architecture Diagram
 
-Application architecture showing logical layers and data flow for the veterinarian microservice.
+Application architecture showing logical layers and data flow.
 
 ## Application Architecture
 
@@ -11,28 +11,28 @@ graph TD
     Client["Client / API Consumer"]
 
     subgraph Presentation["Presentation Layer"]
-        REST["REST Controller\n/vets endpoint"]
+        REST["REST Controller"]
     end
 
     subgraph BusinessLogic["Business Logic Layer"]
-        Cache["Cache Manager"]
-        Config["Configuration\nand Properties"]
+        Cache["Cache Management"]
+        Config["Configuration and Properties"]
     end
 
     subgraph DataAccess["Data Access Layer"]
-        Repository["Vet Repository"]
-        Entities["Domain Entities\nVet, Specialty"]
+        Repository["Repository"]
+        Entities["Domain Entities"]
     end
 
     subgraph DataStore["Data Store"]
         DB["Relational Database"]
     end
 
-    Client -->|"HTTP GET request"| REST
+    Client -->|"HTTP request"| REST
     REST -->|"check cache"| Cache
-    Cache -->|"cache miss - fetch data"| Repository
-    Repository -->|"query entities"| Entities
+    Cache -->|"cache miss, fetch data"| Repository
+    Repository -->|"query"| Entities
     Entities -->|"persist and retrieve"| DB
-    Cache -->|"return cached response"| REST
+    Cache -->|"cached response"| REST
     Config -->|"configure"| Cache
 ```
