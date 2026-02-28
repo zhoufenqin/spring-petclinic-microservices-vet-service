@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "producer": "Java AppCAT CLI",
   "metadata": {
-    "analysisStartTime": "2026-02-28T01:10:46.2250169Z",
-    "analysisEndTime": "2026-02-28T01:12:20.3262666Z",
+    "analysisStartTime": "2026-02-28T01:35:36.910019385Z",
+    "analysisEndTime": "2026-02-28T01:36:24.744016428Z",
     "status": "Complete",
     "privacyMode": "Protected",
     "privacyModeHelpUrl": "https://aka.ms/appcat-privacy-mode",
@@ -64,7 +64,7 @@
       "incidents": [
         {
           "ruleId": "spring-boot-to-azure-config-server-01000",
-          "incidentId": "d3330e95-37d5-411b-a17a-4c6818d16608",
+          "incidentId": "593f0ce4-499a-4f6e-b1cc-9555ece284bc",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 91,
@@ -90,7 +90,7 @@
         },
         {
           "ruleId": "spring-boot-to-azure-eureka-02000",
-          "incidentId": "c31dff07-c473-48e6-9ee4-c5c5be612ad0",
+          "incidentId": "fd38fc08-b2c5-4647-9806-b962a7ac7fce",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 95,
@@ -116,7 +116,7 @@
         },
         {
           "ruleId": "jakarta-ee-version-01000",
-          "incidentId": "043f282c-921f-4092-8587-e3cd0bc42ce1",
+          "incidentId": "6b83d6f1-d49f-4955-8760-a4b285a5896d",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 118,
@@ -141,112 +141,8 @@
           ]
         },
         {
-          "ruleId": "hardcoded-urls-00001",
-          "incidentId": "42eed3d3-964a-4dbb-86be-b750afecb329",
-          "location": "src/main/resources/application.yml",
-          "locationKind": "File",
-          "line": 5,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 3,
-              "severity": "optional"
-            },
-            "azure-appservice": {
-              "effort": 3,
-              "severity": "optional"
-            },
-            "azure-container-apps": {
-              "effort": 3,
-              "severity": "optional"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=cloud-readiness"
-          ]
-        },
-        {
-          "ruleId": "hardcoded-urls-00001",
-          "incidentId": "dc86391f-fc71-45fd-96cf-7ac27e508b44",
-          "location": "src/main/resources/application.yml",
-          "locationKind": "File",
-          "line": 16,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 3,
-              "severity": "optional"
-            },
-            "azure-appservice": {
-              "effort": 3,
-              "severity": "optional"
-            },
-            "azure-container-apps": {
-              "effort": 3,
-              "severity": "optional"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=cloud-readiness"
-          ]
-        },
-        {
-          "ruleId": "unsecure-network-protocol-00000",
-          "incidentId": "e81f39be-2e08-4be3-a9ca-a5698ae7a8d4",
-          "location": "src/main/resources/application.yml",
-          "locationKind": "File",
-          "line": 5,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 3,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=cloud-readiness"
-          ]
-        },
-        {
-          "ruleId": "unsecure-network-protocol-00000",
-          "incidentId": "183583ab-95d4-4521-a299-2a1f6836a3aa",
-          "location": "src/main/resources/application.yml",
-          "locationKind": "File",
-          "line": 16,
-          "column": 0,
-          "targets": {
-            "azure-aks": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-appservice": {
-              "effort": 3,
-              "severity": "mandatory"
-            },
-            "azure-container-apps": {
-              "effort": 3,
-              "severity": "mandatory"
-            }
-          },
-          "labels": [
-            "type=violation",
-            "ruleset=cloud-readiness"
-          ]
-        },
-        {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "faf3d7c8-f383-4417-a103-5f1db78517cf",
+          "incidentId": "ef8ece66-0cff-4b0b-a3f7-417c0a8b7d55",
           "location": "pom.xml",
           "locationKind": "File",
           "line": 76,
@@ -272,7 +168,7 @@
         },
         {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "4d889781-886a-463c-98a3-e571c196926f",
+          "incidentId": "d547aed2-ab94-4540-b1dc-335a68dfb8a2",
           "location": "src/main/java/org/springframework/samples/petclinic/vets/system/CacheConfig.java",
           "locationKind": "File",
           "line": 18,
@@ -298,7 +194,7 @@
         },
         {
           "ruleId": "embedded-cache-15000",
-          "incidentId": "578f33e6-5fc7-4020-8e89-8d020e64c9f9",
+          "incidentId": "10599a7d-273a-4982-8205-3cd65621f3d5",
           "location": "src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java",
           "locationKind": "File",
           "line": 22,
@@ -323,8 +219,112 @@
           ]
         },
         {
+          "ruleId": "hardcoded-urls-00001",
+          "incidentId": "f4d69553-37e5-47b2-8957-b2a214499267",
+          "location": "src/main/resources/application.yml",
+          "locationKind": "File",
+          "line": 5,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "optional"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "optional"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "optional"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "hardcoded-urls-00001",
+          "incidentId": "a87dd0a6-bbce-4bf1-b364-ac320a218779",
+          "location": "src/main/resources/application.yml",
+          "locationKind": "File",
+          "line": 16,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "optional"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "optional"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "optional"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "unsecure-network-protocol-00000",
+          "incidentId": "06ede343-0203-4d12-bd15-77acdde2d6f6",
+          "location": "src/main/resources/application.yml",
+          "locationKind": "File",
+          "line": 5,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "unsecure-network-protocol-00000",
+          "incidentId": "409b3cf1-07e2-4f37-9467-0803d2558cfc",
+          "location": "src/main/resources/application.yml",
+          "locationKind": "File",
+          "line": 16,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
           "ruleId": "dockerfile-00000",
-          "incidentId": "c4e72ddc-ff94-4ba3-b030-ff491d3cc536",
+          "incidentId": "8805b671-20da-4eb2-ac8e-9a7a36c3459b",
           "location": "",
           "locationKind": "",
           "targets": {
