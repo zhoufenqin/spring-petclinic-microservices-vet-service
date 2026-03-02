@@ -1,0 +1,94 @@
+[
+	{
+		"name": "builtin",
+		"initConfig": [
+			{
+				"location": "C:\\Users\\fenzho\\code\\github\\test\\repos\\vet-service",
+				"analysisMode": "source-only",
+				"providerSpecificConfig": {
+					"excludePatterns": [
+						"**/gradlew",
+						"**/.mvn/**",
+						"**/README.*",
+						"**/.appcat-ignore",
+						"**/.migrate-copilot/**",
+						"**/target/**",
+						"**/gradlew.bat",
+						"**/.gradle/**",
+						"**/*.jpg",
+						"**/.devcontainer/**",
+						"**/LICENSE",
+						"**/org.eclipse.equinox.launcher/**",
+						"**/migrate-copilot/**",
+						"**/mvnw",
+						"**/*.png",
+						"**/.editorconfig",
+						"**/.git*",
+						"**/org.eclipse.core.runtime/**",
+						"**/gradle/**",
+						"**/mvnw.cmd",
+						"**/*.svg",
+						"**/.idea/**",
+						"**/.git/**",
+						"**/.devops/**",
+						"**/.github/**",
+						"**/.metadata/**",
+						"**/org.eclipse.equinox.app/**",
+						"**/org.eclipse.osgi/**"
+					]
+				}
+			}
+		],
+		"ContextLines": 100
+	},
+	{
+		"name": "java",
+		"binaryPath": "C:\\Users\\fenzho\\.appcat\\jdtls\\bin\\jdtls",
+		"initConfig": [
+			{
+				"location": "C:\\Users\\fenzho\\code\\github\\test\\repos\\vet-service",
+				"analysisMode": "source-only",
+				"providerSpecificConfig": {
+					"bundles": "C:\\Users\\fenzho\\.appcat\\jdtls\\java-analyzer-bundle\\java-analyzer-bundle.core\\target\\java-analyzer-bundle.core-1.0.0-SNAPSHOT.jar",
+					"cleanExplodedBin": true,
+					"depOpenSourceLabelsFile": "C:\\Users\\fenzho\\.appcat\\maven.default.index",
+					"excludePatterns": [
+						"**/mvnw",
+						"**/*.jpg",
+						"**/.git/**",
+						"**/migrate-copilot/**",
+						"**/mvnw.cmd",
+						"**/.mvn/**",
+						"**/*.png",
+						"**/.devcontainer/**",
+						"**/.devops/**",
+						"**/.git*",
+						"**/LICENSE",
+						"**/.github/**",
+						"**/.metadata/**",
+						"**/org.eclipse.equinox.app/**",
+						"**/org.eclipse.osgi/**",
+						"**/.gradle/**",
+						"**/*.svg",
+						"**/.editorconfig",
+						"**/README.*",
+						"**/.appcat-ignore",
+						"**/org.eclipse.equinox.launcher/**",
+						"**/gradlew.bat",
+						"**/.idea/**",
+						"**/org.eclipse.core.runtime/**",
+						"**/.migrate-copilot/**",
+						"**/target/**",
+						"**/gradlew",
+						"**/gradle/**"
+					],
+					"fernFlowerPath": "C:\\Users\\fenzho\\.appcat\\fernflower.jar",
+					"lspServerName": "java",
+					"lspServerPath": "C:\\Users\\fenzho\\.appcat\\jdtls\\bin\\jdtls",
+					"workspace": "C:\\Users\\fenzho\\.appcat\\.jdtls-workspace\\afab02068913256c"
+				}
+			}
+		],
+		"ContextLines": 100
+	}
+]
